@@ -12,7 +12,7 @@ public class AppMain extends Application{
 	public void start(Stage primaryStage) throws Exception {
 		Parent root = FXMLLoader.load(getClass().getResource("Root.fxml"));
 		Scene scene = new Scene(root);
-		//ImageView imageview = new ImageView(); 
+		 
 		primaryStage.setTitle("VBox HBox 예제");
 		primaryStage.setScene(scene);
 		primaryStage.show();
