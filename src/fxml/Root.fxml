@@ -5,7 +5,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.control.Button?>
 
-<HBox xmlns:fx="http://javafx.com/fxml">
+<HBox xmlns:fx="http://javafx.com/fxml" fx:controller="fxml.RootController">
 	<!-- TODO Add Nodes -->
 	<padding>
 		<!-- <Insets topRightBottomLeft="10.0"/> -->
@@ -13,8 +13,8 @@
 	</padding>
 	<spacing>10</spacing>
 	<children>
-		<TextField prefWidth="200" />
-		<Button text="확인" />
+		<TextField fx:id="textField" prefWidth="200" />
+		<Button fx:id="btnOk" text="확인" />
 	</children>
 </HBox>
 

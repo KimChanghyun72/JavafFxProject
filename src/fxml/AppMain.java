@@ -39,7 +39,7 @@ public class AppMain extends Application {
 		Button button1 = new Button();
 		button1.setText("취소");
 		button1.setPrefSize(100, 100);
-		button1.setOnAction(new EventHandler<ActionEvent>() {
+		button1.setOnAction(new EventHandler<ActionEvent>() {//이 구문의 이해가 완전히 안 됐어.
 			@Override
 			public void handle(ActionEvent event) {
 				textField.setText(null);				
@@ -48,9 +48,9 @@ public class AppMain extends Application {
 		//button1.setOnAction(event -> Platform.exit());
 
 		ObservableList list = hbox.getChildren();
-		list.add(button1);
 		list.add(textField);
 		list.add(button);
+		list.add(button1);
 		//위아래는 같은 내용. box의 세부내용은 observableList 형식으로 구성되어있음을 알 수 있다.
 		//		hbox.getChildren().add(textField);
 		//		hbox.getChildren().add(button);
