@@ -7,7 +7,8 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextArea?>
 
-<AnchorPane xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="350" prefWidth="500" 
+fx:controller="view_pack.BoardController">
 	<children>
 		<TableView fx:id="tableView" layoutX="25" layoutY="55" prefHeight="241" prefWidth="175">
 		</TableView>
