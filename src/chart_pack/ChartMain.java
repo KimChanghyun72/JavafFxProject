@@ -1,0 +1,26 @@
+package chart_pack;
+
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+
+//ChartControl.fxml
+//ChartController.java
+public class ChartMain extends Application {
+
+	@Override
+	public void start(Stage primaryStage) throws Exception {
+		Parent root = FXMLLoader.load(getClass()
+				.getResource("ChartControl.fxml"));
+		Scene scene = new Scene(root);
+		primaryStage.setScene(scene);
+		primaryStage.show();
+		primaryStage.setTitle("20.06.05");
+	}//end of start
+
+	public static void main(String[] args) {
+		launch(args);
+	}
+}//end of class
