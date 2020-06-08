@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.TableColumn?>
+
+<BorderPane prefHeight="212.0" prefWidth="375.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+fx:controller="com.yedam.test.BookController">
+   <center>
+      <TableView fx:id="tableView" prefHeight="162.0" prefWidth="371.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn prefWidth="75.0" text="도서코드" />
+          <TableColumn prefWidth="75.0" text="도서명" />
+           <TableColumn prefWidth="75.0" text="저자" />
+           <TableColumn prefWidth="75.0" text="단가" />
+           <TableColumn prefWidth="75.0" text="판매량" />
+        </columns>
+      </TableView>
+   </center>
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" spacing="20.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnAdd" mnemonicParsing="false" text="추가" />
+            <Button fx:id="btnChart" mnemonicParsing="false" text="차트정보" />
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>

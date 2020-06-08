@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.TableColumn?>
+
+<BorderPane prefHeight="212.0" prefWidth="375.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+>
+   <center>
+      <TableView fx:id="tableView" prefHeight="162.0" prefWidth="371.0" BorderPane.alignment="CENTER">
+        <columns>
+         
+          <TableColumn  prefWidth="75.0" text="도서명" />
+          <TableColumn  prefWidth="75.0" text="저자" />
+           <TableColumn  prefWidth="75.0" text="금액" />     
+           <TableColumn prefWidth="75.0" text="판매량" />
+        </columns>
+      </TableView>
+   </center>
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" spacing="20.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnFix" mnemonicParsing="false" text="수정" />
+            <Button fx:id="btnClose" mnemonicParsing="false" text="닫기" />
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>
